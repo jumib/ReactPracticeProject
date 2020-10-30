@@ -14,7 +14,7 @@ import { Home } from './templates';
 const App = () => {
   return <>
   <Provider store = {store}>
-  <div style={{width: "1000px",margin: "0 auto"}}>
+  <div style={{width: "auto",margin: "0 auto"}}>
 
     <BrowserRouter>
     <Nav/>

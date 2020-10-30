@@ -4,6 +4,7 @@ const Home = () => {
     return (
         <>
         <h1>Home</h1>
+        <img src={require('../assets/main.jpg')}/>
         </>
     )
 }
