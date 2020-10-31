@@ -6,6 +6,8 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
+
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -73,6 +75,9 @@ const Mypage = () => {
               >
                 수정하기
               </Button>
+              <Link href="/" variant="body2">
+                Go home
+              </Link>
             </form>
           </div>
         </Container>
