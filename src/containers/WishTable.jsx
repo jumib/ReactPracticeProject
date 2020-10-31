@@ -18,11 +18,11 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
     createData(4, '15 Mar, 2019', 'Bruce Springsteen', 'Long Branch, NJ', 'VISA ⠀•••• 5919', 212.79),
   ];
 
-const DetailTable = () => {
+const WishTable = () => {
 
     return (
         <React.Fragment>
-      <Title>주식 매매 히스토리</Title>
+      <Title>종목에 대한 정보테이블</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -50,4 +50,4 @@ const DetailTable = () => {
     )
 }
 
-export default DetailTable
+export default WishTable

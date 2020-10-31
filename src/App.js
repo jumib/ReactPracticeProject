@@ -4,7 +4,8 @@ import store from './store'
 import Signup from './containers/Signup'
 import SignIn from './containers/SignIn';
 import TotalView from './containers/TotalView'
-import WishList from './containers/WishList'
+import WishView from './containers/WishView'
+import WishCart from './containers/WishCart'
 import DetailView from './containers/DetailView'
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Mypage} from './containers';
@@ -28,7 +29,8 @@ const App = () => {
           <Route path="/mypage" component={Mypage}></Route>
           <Route path="/totalview" component={TotalView}></Route>
           <Route path="/detailview" component={DetailView}></Route>
-          <Route path="/wishlist" component={WishList}></Route>
+          <Route path="/wishview" component={WishView}></Route>
+          <Route path="/wishcart" component={WishCart}></Route>
     </BrowserRouter>  
     </div></Provider>
     </>

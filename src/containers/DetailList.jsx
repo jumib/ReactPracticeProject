@@ -1,6 +1,5 @@
 import React from 'react';
 import Table from '@material-ui/core/Table';
-import { makeStyles } from '@material-ui/core/styles';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
@@ -14,15 +13,8 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
   const rows = [
     createData(0, '16 Mar, 2019', 'Elvis Presley', 'Tupelo, MS', 'VISA ⠀•••• 3719', 312.44),
   ];
-  
-  const useStyles = makeStyles((theme) => ({
-    seeMore: {
-      marginTop: theme.spacing(3),
-    },
-  }));
 
 const DetailList = () => {
-    const classes = useStyles();
 
     return (
         <React.Fragment>

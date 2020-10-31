@@ -8,11 +8,12 @@ const TotalChart = () => {
     return (
     <>
     <Card>
-      <CardContent>
+        <CardContent>
         <Typography variant="h5" component="h2">
-            전체 손익차트 보여주는 구역
+            전체 손익 바차트<br/>
+            <br/><br/><br/><br/><br/>
         </Typography>
-      </CardContent>
+        </CardContent>
     </Card>
     </>
     )

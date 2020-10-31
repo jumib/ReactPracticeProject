@@ -8,11 +8,12 @@ const DetailChart = () => {
     return (
     <>
     <Card>
-      <CardContent>
+        <CardContent>
         <Typography variant="h5" component="h2">
-            선택종목의 주가를 보여주는 구역
+            검색한 종목의 주가차트<br/>
+            <br/><br/><br/><br/><br/>
         </Typography>
-      </CardContent>
+        </CardContent>
     </Card>
     </>
     )

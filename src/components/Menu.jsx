@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 export const UserMenu = () => (
     <nav>
-        <ol>
+        <ul>
             <li><Link to='/signup'>Sign Up</Link></li>
             <li><Link to='/signin'>Sign In</Link></li>
             <li><Link to='/mypage'>My Page</Link></li>
-        </ol>
+        </ul>
     </nav>
 )
 
@@ -25,6 +25,7 @@ export const DetailMenu = () => (
 
 export const WishMenu = () => (
     <nav>
-        <li><Link to='/wishlist'>Wish List</Link></li>
+        <li><Link to='/wishview'>Wish View</Link></li>
+        <li><Link to='/wishcart'>Wish Cart</Link></li>
     </nav>
 )

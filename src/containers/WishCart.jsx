@@ -18,11 +18,12 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
     createData(4, '15 Mar, 2019', 'Bruce Springsteen', 'Long Branch, NJ', 'VISA ⠀•••• 5919', 212.79),
   ];
 
-const DetailTable = () => {
+const WishCart = () => {
 
     return (
         <React.Fragment>
-      <Title>주식 매매 히스토리</Title>
+      <h1>WishCart</h1>
+      <Title>찜한 주식에 대한 목록</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -30,7 +31,6 @@ const DetailTable = () => {
             <TableCell>Name</TableCell>
             <TableCell>Ship To</TableCell>
             <TableCell>Payment Method</TableCell>
-            <TableCell align="right">Sale Amount</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -40,7 +40,6 @@ const DetailTable = () => {
               <TableCell>{row.name}</TableCell>
               <TableCell>{row.shipTo}</TableCell>
               <TableCell>{row.paymentMethod}</TableCell>
-              <TableCell align="right">{row.amount}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -50,4 +49,4 @@ const DetailTable = () => {
     )
 }
 
-export default DetailTable
+export default WishCart

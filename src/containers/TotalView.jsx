@@ -1,4 +1,4 @@
-import { Card, Grid, Table } from '@material-ui/core'
+import { Grid, Table } from '@material-ui/core'
 import React from 'react'
 
 const TotalView = () => {

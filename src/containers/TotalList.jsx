@@ -2,20 +2,13 @@ import React from 'react'
 import { Card, CardContent } from '@material-ui/core';
 
 
-const data = () => (
-    alert()
-)
-const search = e => (
-    alert()
- )
-
 const TotalList = () => {
 
     return (
         <Card>
             <CardContent>
             <table>
-                <h1>Total stock</h1>
+                <h3>Total stock list</h3>
                 <tr>
                     <th>userid</th>
                     <th>name</th>
