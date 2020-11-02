@@ -1,29 +1,19 @@
 import React from 'react';
-import { Provider } from 'react-redux'
-import store from './store'
-import Signup from './containers/Signup'
-import SignIn from './containers/SignIn';
-import TotalView from './containers/TotalView'
-import WishView from './containers/WishView'
-import WishCart from './containers/WishCart'
-import DetailView from './containers/DetailView'
 import { BrowserRouter, Route } from 'react-router-dom';
-import { Mypage} from './containers';
-import Nav from './components/Nav'
-import { Detail, Home, Total, Wish, User } from './templates';
+import { Mypage, DetailView, WishCart, WishView, TotalView, Signup, StockNews, StockFinancial, CovidInfo, CovidStock} from './containers';
+import SignIn from './containers/SignIn'
+import {Nav} from './components'
+import { Home, Stock, User, Covid, Examples } from './templates';
 
 
 const App = () => {
   return <>
-  <Provider store = {store}>
-  <div style={{width: "auto",margin: "0 auto"}}>
     <BrowserRouter>
     <Nav/>
           <Route exact path="/" component={Home}></Route>
           <Route path="/user" component={User}></Route>
-          <Route path="/total" component={Total}></Route>
-          <Route path="/detail" component={Detail}></Route>
-          <Route path="/wish" component={Wish}></Route>
+          <Route path="/stock" component={Stock}></Route>
+          <Route path="/covid" component={Covid}></Route>
           <Route path="/signup" component={Signup}></Route>
           <Route path="/signin" component={SignIn}></Route>
           <Route path="/mypage" component={Mypage}></Route>
@@ -31,8 +21,12 @@ const App = () => {
           <Route path="/detailview" component={DetailView}></Route>
           <Route path="/wishview" component={WishView}></Route>
           <Route path="/wishcart" component={WishCart}></Route>
+          <Route path="/news" component={StockNews}></Route>
+          <Route path="/financial" component={StockFinancial}></Route>
+          <Route path="/covidinfo" component={CovidInfo}></Route>
+          <Route path="/covidstock" component={CovidStock}></Route>
+          <Route path="/examples" component={Examples}></Route>
     </BrowserRouter>  
-    </div></Provider>
     </>
 }
 

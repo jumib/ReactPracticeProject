@@ -1,5 +1,5 @@
 export {default as Home} from './Home'
 export {default as User} from './User'
-export {default as Total} from './Total'
-export {default as Detail} from './Detail'
-export {default as Wish} from './Wish'
+export {default as Covid} from './Covid'
+export {default as Stock} from './Stock'
+export {default as Examples} from './Examples'

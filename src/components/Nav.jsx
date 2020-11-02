@@ -6,11 +6,13 @@ const Nav = () => {
 
   return (
         <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/user'>User</Link></li>
-        <li><Link to='/total'>total</Link></li>
-        <li><Link to='/detail'>detail</Link></li>
-        <li><Link to='/wish'>wish</Link></li>
+         <ol>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/user'>User</Link></li>
+          <li><Link to='/covid'>Covid</Link></li>
+          <li><Link to='/stock'>Stock</Link></li>
+          <li><Link to='/examples'>Examples</Link></li>
+        </ol>
         </>
         );
 }
