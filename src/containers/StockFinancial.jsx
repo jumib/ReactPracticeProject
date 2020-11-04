@@ -1,13 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
-import TextField from '@material-ui/core/TextField';
+// import Table from '@material-ui/core/Table';
+// import TableBody from '@material-ui/core/TableBody';
+// import TableCell from '@material-ui/core/TableCell';
+// import TableContainer from '@material-ui/core/TableContainer';
+// import TableHead from '@material-ui/core/TableHead';
+// import TableRow from '@material-ui/core/TableRow';
+// import Paper from '@material-ui/core/Paper';
+// import TextField from '@material-ui/core/TextField';
 
 const useStyles = makeStyles({
     table: {
@@ -39,7 +39,7 @@ const StockFinancial = () => {
     return (<>
     
     <h3>재무제표를 분석해 예상당기순이익과 특정일 주가예측</h3>
-    <input type="text" placeholder="종목을 검색해보세요 !"/> 
+    {/* <input type="text" placeholder="종목을 검색해보세요 !"/> 
                     <button>검색</button>
     <h3>예상당기순이익</h3>
     <TableContainer component={Paper}>
@@ -88,7 +88,7 @@ const StockFinancial = () => {
     <div>
         <h3>counting ...</h3>
     <p>%%%의 주가는 %원으로 예측되었습니다.</p>
-    </div>           
+    </div>            */}
     </>)}
 
 export default StockFinancial

@@ -1,17 +1,17 @@
 import React from 'react'
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Avatar from '@material-ui/core/Avatar';
-import Title from './Title';
+// import Card from '@material-ui/core/Card';
+// import CardContent from '@material-ui/core/CardContent';
+// import Avatar from '@material-ui/core/Avatar';
+// import Title from './Title';
 
 
 
 const StockNews = () => {
 
     return (<>
-        <React.Fragment>
         <h1>뉴스기사를 분석해 종목을 추천하는 시스템</h1>
-        <Card>
+        {/*<React.Fragment>
+         <Card>
             <CardContent>
             <Title>검색하기</Title>
             <input type="text" placeholder="종목을 검색해보세요 !"/> 
@@ -43,7 +43,7 @@ const StockNews = () => {
                 <Avatar>1</Avatar>
             </div>
         </Card>
-        </React.Fragment>
+        </React.Fragment> */}
     </>           
     )}
 

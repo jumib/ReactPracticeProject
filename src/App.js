@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { Mypage, DetailView, WishCart, WishView, TotalView, Signup, StockNews, StockFinancial, CovidInfo, CovidStock} from './containers';
+import { Mypage, DetailView, WishCart, WishView, TotalView, Signup, StockNews, StockFinancial, CovidInfo, CovidStock, StockInfo} from './containers';
 import SignIn from './containers/SignIn'
 import {Nav} from './components'
 import { Home, Stock, User, Covid, Examples } from './templates';
@@ -22,6 +22,7 @@ const App = () => {
           <Route path="/wishview" component={WishView}></Route>
           <Route path="/wishcart" component={WishCart}></Route>
           <Route path="/news" component={StockNews}></Route>
+          <Route path="/stockinfo" component={StockInfo}></Route>
           <Route path="/financial" component={StockFinancial}></Route>
           <Route path="/covidinfo" component={CovidInfo}></Route>
           <Route path="/covidstock" component={CovidStock}></Route>

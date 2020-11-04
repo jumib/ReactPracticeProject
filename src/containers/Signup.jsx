@@ -12,19 +12,25 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-// https://github.com/mui-org/material-ui/tree/master/docs/src/pages/getting-started/templates/sign-up
+import axios from 'axios'
 
-const Copyright = () => {
-    return (
-      <Typography variant="body2" color="textSecondary" align="center">
-        {'Copyright © '}
-        <Link color="inherit" href="https://material-ui.com/">
-          Your Website
-        </Link>{' '}
-        {new Date().getFullYear()}
-        {'.'}
-      </Typography>
-    );
+const [userid, setUserid] = useState();
+const [name, setName] = useState();
+const [password, setPassword] = useState();
+
+
+const register = () => {
+  axios.post(`https://localhost8080/signup`)
+  .then(res => {
+    if (res.status === 200) {
+      alert('success')
+    } else {
+      alert('fail')
+    }
+  })
+  .catch(error => {
+    alert('fail')
+  })
 }
   
 const useStyles = makeStyles((theme) => ({
@@ -72,6 +78,7 @@ const Signup = () => {
                 name="email"
                 autoComplete="email"
                 autoFocus
+                onChange={e => setUserid(e.target.value)}
               />
             </Grid>
             <Grid item xs={12}>
@@ -83,6 +90,7 @@ const Signup = () => {
                 fullWidth
                 id="Kiumid"
                 label="Kium id"
+                onChange={e => setName(e.target.value)}
               />
             </Grid>
             <Grid item xs={12}>
@@ -95,6 +103,7 @@ const Signup = () => {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+                onChange={e => setPasswo(e.target.value)}
               />
             </Grid>
             <Grid item xs={12}>
@@ -110,6 +119,7 @@ const Signup = () => {
             variant="contained"
             color="primary"
             className={classes.submit}
+            onClick={register}
           >
             Sign Up
           </Button>
@@ -123,7 +133,6 @@ const Signup = () => {
         </form>
       </div>
       <Box mt={5}>
-        <Copyright />
       </Box>
     </Container>
     </>
